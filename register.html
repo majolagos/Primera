@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas de juego y políticas.</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<header class="header">
+    <h1 class="header-h1">Northside Youth Soccer League</h1>
+    <img  src='assets/fondo3.jpg' alt='img_portada' id='img_portada'/>
+    
+</header>
+
+<body class="body">
+    
+    <section class="sectionhead">
+   
+        <img src='assets/nysl_logo.png' class="sectionhead-img" alt='logo' id='logo_img'/>
+    
+    
+        <nav class="navbar">
+        
+        
+            <ul class="navbar-ul">
+    
+                <li>
+                    <a class="navbar-ancla" href="index.html">Home</a>  
+                </li>
+    
+                <li>
+                    <a class="navbar-ancla" href="about.html">About NYSL</a>   
+                </li>
+    
+                <li>
+                    <a class="navbar-ancla" href="rules.html">Rules</a>   
+                </li>
+
+                <li>
+                    <a class="navbar-ancla" href="game_info.html">Games</a>   
+                </li>
+    
+                <li>
+                    <a class="navbar-ancla" href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a class="navbar-ancla active" href="register.html">Register</a>
+                </li>
+            </ul>  
+            
+    
+        </nav>
+    
+    </section>
+
+    <div class="div-section">
+
+        <section  class="section">
+    
+            <h1>Formulario de Inscripción</h1>
+        
+         <section class="section-interior">
+
+       
+
+        <form action="formpost.html" class="section-formulario" 
+          method="GET">
+
+          <fieldset class="form-fieldset">
+                      <legend class="form-legend">Datos Personales</legend>
+
+                    <label for="">Nombre:</label>
+                    <input type="text" name="txtNombreJugador" id="txtNombreJugador" maxlength="20" required autofocus>
+                  
+                    <label for="">Apellido:</label>
+                    <input type="text" name="txtApellido" id="txtApellido" required autofocus> <br>
+                        
+                    <label for="">Dirección:</label>
+                    <input type="text" name="txtDireccion" id="txtDireccion" required autofocus> <br>
+             
+                    <label for="">Ciudad:</label>
+                    <input type="text" name="txtCiudad" id="txtCiudad" required autofocus>
+                  
+                    <label for="">Código Postal:</label>
+                    <input type="text" name="txtCodigoPostal" id="txtCodigoPostal" required autofocus> <br>
+           
+                    <label for="">Fecha de Nacimiento:</label>
+                    <input type="date" name="txtFechaNacimiento" id="txtFechaNacimiento" placeholder="dd/mm/yyyy">
+                 
+                    <label for="">Género:</label>
+                    <label for="">Mujer</label>
+                   <input type="checkbox" name="chkMujer" id="chkMujer" value="Mujer">
+
+                   <label for="">Hombre</label>
+                   <input type="checkbox" name="chkHombre" id="chkHombre" value="Hombre"> <br>
+              
+            
+
+                  
+                    <label for="">Grado:</label>
+                     <input type="checkbox" name="chkPreescolar" onchange="ComprobarGrado(this.value);" id="chkPreescolar" value="Preescolar">
+                     <label for="">Preescolar</label>
+                     &nbsp;
+                     <input type="checkbox" name="chk1" onchange="ComprobarGrado(this.value);" id="chk1" value="1°">
+                     <label for="">1°</label>
+                     &nbsp;
+                     <input type="checkbox" name="chk2" onchange="ComprobarGrado(this.value);" id="chk2" value="2°">
+                     <label for="">2°</label>
+
+                     &nbsp;
+                     <input type="checkbox" name="chk3" onchange="ComprobarGrado(this.value);" id="chk3" value="3°">
+                     <label for="">3°</label>
+
+                     &nbsp;
+                     <input type="checkbox" name="chk4" onchange="ComprobarGrado(this.value);" id="chk4" value="4°">
+                     <label for="">4°</label>
+
+                     &nbsp;
+                     <input type="checkbox" name="chk5" onchange="ComprobarGrado(this.value);" id="chk5" value="5°">
+                     <label for="">5°</label>
+                  </fieldset>
+
+<br>
+                  <fieldset class="form-fieldset">
+
+                    <legend class="form-legend">¿De que escuela vives mas cerca?</legend>
+                    <h5>Escuela más cercana:</h5>
+					<label for="">
+
+                        <label for="chkA1">
+						    <input type="checkbox" name="chkA1" id="chkA1" value="AJ Katzenmaier">
+                            <label for="">AJ Katzenmaier</label>
+                        </label>
+
+                        <label for="chkA2">
+						    <input type="checkbox" name="chkA2" id="chkA2" value="Marjorie P Hart">
+                           Marjorie P Hart
+                        </label>
+                              
+
+                        <label for="chkA3">
+						    <input type="checkbox" name="chkA3" id="chkA3" value="Greenbay">
+                            Greenbay
+                        </label>
+                        
+                        <label for="chkA4">
+                            <input type="checkbox" name="chkA4" id="chkA4" value="North Elementary">
+                            North Elementary
+                        </label>
+
+                        <label for="chkA5">
+                            <input type="checkbox" name="chkA5" id="chkA5" value="Howard A Yeager">
+                            Howard A Yeager
+                        </label>
+
+                        <label for="chkA6">
+                            <input type="checkbox" name="chkA6" id="chkA6" value="South Elementary">
+                            South Elementary
+                        </label>
+
+                </fieldset>
+              
+              
+                    
+                <fieldset class="form-fieldset">
+                  
+                      <legend class="form-legend"> ¿En qué posición(es) juegas normalmente? (marque todas las que correspondan)</legend>
+                              
+
+                
+                        <input type="checkbox" name="chkB1" id="chkB1" value="Delantero">
+                        <label for="">Delantero</label>
+                   
+                        <input type="checkbox" name="chkB2" id="chkB2" value="Mediocampo">
+                        <label for="">Mediocampo</label>
+                  
+                        <input type="checkbox" name="chkB3" id="chkB3" value="Portero">
+                        <label for="">Portero</label>
+                    
+                        <input type="checkbox" name="chkB4" id="chkB4" value="Defensa">
+                        <label for="">Defensa</label>
+                </fieldset>
+
+                <fieldset class="form-fieldset">                
+                    
+                      <legend class="form-legend"> Tamaño uniforme:</legend>
+                 
+
+                        <input type="checkbox" name="chkC1" id="chkC1" value="Niño P">
+                        <label for="">Niño P</label>
+                    
+                        <input type="checkbox" name="chkC2" id="chkC2" value="Mediano">
+                        <label for="">Mediano</label>
+                   
+                        <input type="checkbox" name="chkC3" id="chkC3" value="Niño M">
+                        <label for="">Niño M</label>
+                    
+                        <input type="checkbox" name="chkC4" id="chkC4" value="Grande">
+                        <label for="">Grande</label>
+                    
+                        <input type="checkbox" name="chkC5" id="chkC5" value="Niño G">
+                        <label for="">Niño G</label>
+                    
+                        <input type="checkbox" name="chkC6" id="chkC6" value="Extra-Grande">
+                        <label for="">Extra-Grande</label>
+                    
+                        <input type="checkbox" name="chkC7" id="chkC7" value="Pequeño">
+                        <label for="">Pequeño</label>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend class="form-legend">
+                        Permiso para jugar
+                    </legend>
+
+                        <p>
+                            Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y
+                            yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad
+                            de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro
+                            para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y
+                            personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra
+                            cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del
+                            solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
+                        </p>
+
+                        <p>
+                            Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco
+                            que he leído la política de cancelación y acepto sus términos.
+                        </p>
+                        
+                    
+                        <label for="">Firma Padre/Tutor:</label>
+                        <input type="text" name="txtFirma" id="txtFirma">
+                
+                        <label for="Fecha">Fecha:</label>                        
+                        <input type="date" class="InputFecha" name="Fecha" id="txtFechaPermiso">
+                            
+                </fieldset>   
+                
+               
+                <div>
+                
+                     <input type="submit" class="form-button"  value="Confirmar">
+
+            </div>
+
+
+         </form>
+         </section>
+       </section>
+
+    </div>
+
+</body>
+</html>
